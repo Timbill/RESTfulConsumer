@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.client.RestTemplate;
 
 	public class Consumer {
-
+////
 	    private static final Logger log = LoggerFactory.getLogger(Consumer.class);
 
 	    public static void main(String args[]) {
