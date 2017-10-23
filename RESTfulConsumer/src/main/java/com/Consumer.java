@@ -16,6 +16,7 @@ import org.springframework.web.client.RestTemplate;
 	    public static void main(String args[]) {
 	        RestTemplate restTemplate = new RestTemplate();
 	        Country country = restTemplate.getForObject("http://localhost:8080/SpringRestfulWebServicesCRUDExample/country/2", Country.class);
+	        System.out.println(country.toString());
 	        log.info(country.toString());
 //	        Countries countries = restTemplate.getForObject("http://localhost:8080/SpringRestfulWebServicesCRUDExample/countries", Countries.class);
 //	        log.info(countries.toString());
@@ -32,6 +33,7 @@ import org.springframework.web.client.RestTemplate;
 	        restTemplate2.put ( "http://localhost:8080/SpringRestfulWebServicesCRUDExample/countries", country2, params);
 	        
 	        Country country3 = restTemplate.getForObject("http://localhost:8080/SpringRestfulWebServicesCRUDExample/country/7", Country.class);
+	        System.out.println(country3.toString());
 	        log.info(country3.toString());
 
 	    }
