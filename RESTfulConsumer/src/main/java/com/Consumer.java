@@ -26,7 +26,7 @@ import org.springframework.web.client.RestTemplate;
 	             
 	        Country country2 = new Country();
 	        country2.setId("7");
-	        country2.setCountryName("US");
+	        country2.setCountryName("USA");
 	        country2.setPopulation("350");
 	             
 	        RestTemplate restTemplate2 = new RestTemplate();
